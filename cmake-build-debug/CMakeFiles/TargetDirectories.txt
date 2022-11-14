@@ -1,0 +1,3 @@
+G:/workspace/codeset/cmake-build-debug/CMakeFiles/codeset.dir
+G:/workspace/codeset/cmake-build-debug/CMakeFiles/edit_cache.dir
+G:/workspace/codeset/cmake-build-debug/CMakeFiles/rebuild_cache.dir
