@@ -10,5 +10,5 @@ int main()
         sum[i] = array2[i]+array2[i+1]+array2[i+2]+array2[i+3]+array2[i+4];
     for (i = 0; i < 12; i++)
         max=sum[i]>max&&(num=i)?sum[i]:max;
-    printf("%d\n",num);
+    printf("%d\n",num-1);
 }
