@@ -10,13 +10,14 @@ int main()
     scanf("%d",&n);
     for(i=0;i<n;i++)
     {
-        scanf("%d",&array[n]);
-        for(k=0;k<n;k++)
-            array[n]=array[num]==array[k]?0:array[n];
+        scanf("%d",&array[num]);
+        for(k=0;k<num;k++)
+            array[num]=array[num]==array[k]?0:array[num];
+        num++;
     }
-    qsort(array,n,sizeof(array[0]),compare);
+    qsort(array,num,sizeof(array[0]),compare);
     scanf("%d",&score);
-    for(i=0;i<n;i++)
+    for(i=0;i<num;i++)
         if(score==array[i])
             printf("%d",i+1);
 }
