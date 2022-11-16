@@ -1,5 +1,7 @@
 #include<stdio.h>
-void getTimesOfNumber_Callatz(int number,int array[],int times[],int len)
+int times[1000]={0};
+int array[1000]={0};
+void getTimesOfNumber_Callatz(int number,int len)
 {
     int num=number;
     while (num !=1)
@@ -37,7 +39,6 @@ int main()
     int n;
     scanf("%d",&n);
     int array[1000]={0};
-    int times[1000]={0};
     int outputs[1000]={0};
     for (int i = 0; i < n; i++)
     {
@@ -45,7 +46,7 @@ int main()
     }
     for (int i = 0; i < n; i++)
     {
-        getTimesOfNumber_Callatz(array[i],array,i,times,n);
+        getTimesOfNumber_Callatz(array[i],n);
     }
     int len=0;
     for (int i = 0; i <n; i++)

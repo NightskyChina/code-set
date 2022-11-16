@@ -23,5 +23,5 @@ int main()
         boolean =1;
     }
     printf("%d\n",count);
-    return 0;  
+    return 0;
 }
