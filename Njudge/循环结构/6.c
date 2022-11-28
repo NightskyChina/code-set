@@ -18,10 +18,6 @@ int main()
     int n,i;
     scanf("%d",&n);
 	for (i = pow(10,n-1); i < pow(10,n); i++)
-	{
 		if (i==DaffodilNumberCalculationMethod(i,n))
-		{
 			printf("%d\n",i);
-		}
-	}
 }
