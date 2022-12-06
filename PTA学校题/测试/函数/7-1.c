@@ -15,11 +15,11 @@ void swap(int *a,int *b)
 int main()
 {
     int array[10][10];
-    getMatrix(array,4,4);
-    for (int i =0; i < 4; i++)
-        for (int j = i; j < 4; j++)
+    getMatrix(array,3,3);
+    for (int i =0; i < 3; i++)
+        for (int j = i; j < 3; j++)
             swap(&array[i][j],&array[j][i]);
-    for (int i =0; i <4; i++)
-        for (int j = 0; j < 4; j++)
-            printf("% 8d%s",array[i][j],j==3?"\n":"");
+    for (int i =0; i <3; i++)
+        for (int j = 0; j < 3; j++)
+            printf("%d %s",array[i][j],j==2?"\n":"");
 }
