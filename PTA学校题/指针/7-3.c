@@ -1,26 +1,27 @@
 #include<stdio.h>
 #include<string.h>
-void delchar(char *str,char ch)
+void delchar(char str[],char c)
 {
-    for(int i=0;i<strlen(str);i++)
-        if(str[i]==ch)
-            str[i]='\0';
+    while(*str!='\0')
+    {
+        if(*str!=c)
+        {
+            putchar(*str);
+        }
+        str++;
+    }
 }
 int main()
 {
-    int r;
-    char str[10][100]={0},ch;
-    scanf("%d", &r);
+    int n;
+    char str[1000],ch;
+    scanf("%d",&n);
     getchar();
-    for (int i = 0; i < r; i++)
+    for(int i=0;i<n;i++)
     {
-        char c;
-        int len=0;
-        while ((c=getchar())!='\n')
-            str[i][len++]=c;
-        scanf("%d", &ch);
-        delchar(str[i], ch);
+        gets(str);
+        scanf("%c",&ch);
+        printf("result: ");
+        delchar(str,ch);
     }
-    for (int i = 0; i < r; i++)
-        printf("result: %s",str[i]);
 }
